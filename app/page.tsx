@@ -1,65 +1,231 @@
-import Image from "next/image";
+import Link from 'next/link';
+import pregnancyWeeks from '@/data/pregnancyWeeks.json';
 
 export default function Home() {
+  const featuredWeeks = [4, 12, 20, 28, 36, 40];
+  const featured = pregnancyWeeks.filter(w => featuredWeeks.includes(w.week));
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Your Pregnancy Journey, Week by Week
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="text-xl md:text-2xl mb-8 opacity-90">
+            Expert guidance, personalized insights, and comprehensive information
+            for every stage of your pregnancy.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/pregnancy"
+              className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Explore Week by Week
+            </Link>
+            <button className="bg-purple-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-900 transition">
+              Download BabyBloom App
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Everything You Need for a Healthy Pregnancy
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-4xl mb-4">📅</div>
+              <h3 className="text-xl font-semibold mb-3">Week-by-Week Tracking</h3>
+              <p className="text-gray-600">
+                Follow your baby's development from conception to birth with detailed
+                weekly guides covering growth, symptoms, and milestones.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-4xl mb-4">💊</div>
+              <h3 className="text-xl font-semibold mb-3">Symptom Guidance</h3>
+              <p className="text-gray-600">
+                Understand what's normal, get safe remedies for common symptoms,
+                and know when to contact your healthcare provider.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-4xl mb-4">🍎</div>
+              <h3 className="text-xl font-semibold mb-3">Nutrition & Wellness</h3>
+              <p className="text-gray-600">
+                Expert advice on pregnancy nutrition, safe exercises, and lifestyle
+                tips to support your health and your baby's development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Weeks */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Popular Pregnancy Weeks
+          </h2>
+          <p className="text-center text-gray-600 mb-12 text-lg">
+            Explore key milestones in your pregnancy journey
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {featured.map((week) => (
+              <Link
+                key={week.week}
+                href={`/pregnancy/${week.week}-weeks-pregnant`}
+                className="border rounded-lg p-6 hover:border-purple-500 hover:shadow-xl transition"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-sm text-gray-500">{week.trimester} Trimester</span>
+                  <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">
+                    Week {week.week}
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  {week.week} Weeks Pregnant
+                </h3>
+                <p className="text-gray-600 mb-3">
+                  Baby size: {week.baby_size} ({week.baby_size_cm})
+                </p>
+                <p className="text-sm text-gray-500">
+                  {week.key_development}
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/pregnancy"
+              className="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition"
             >
-              Learning
-            </a>{" "}
-            center.
+              View All 40 Weeks →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trimester Overview */}
+      <section className="py-16 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Your Pregnancy by Trimester
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="text-2xl font-bold mb-4 text-purple-600">
+                First Trimester
+              </h3>
+              <p className="text-gray-600 mb-4">Weeks 1-12</p>
+              <p className="mb-4">
+                The foundation of your pregnancy. Your baby develops from a single cell
+                to a tiny human with all major organs forming.
+              </p>
+              <Link
+                href="/pregnancy/12-weeks-pregnant"
+                className="text-purple-600 font-semibold hover:underline"
+              >
+                Learn more →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="text-2xl font-bold mb-4 text-pink-600">
+                Second Trimester
+              </h3>
+              <p className="text-gray-600 mb-4">Weeks 13-26</p>
+              <p className="mb-4">
+                The "honeymoon period" where energy returns, you feel baby move,
+                and your bump becomes visible.
+              </p>
+              <Link
+                href="/pregnancy/20-weeks-pregnant"
+                className="text-pink-600 font-semibold hover:underline"
+              >
+                Learn more →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="text-2xl font-bold mb-4 text-blue-600">
+                Third Trimester
+              </h3>
+              <p className="text-gray-600 mb-4">Weeks 27-40</p>
+              <p className="mb-4">
+                The final stretch! Your baby gains weight rapidly and prepares for
+                birth as you get ready to meet your little one.
+              </p>
+              <Link
+                href="/pregnancy/36-weeks-pregnant"
+                className="text-blue-600 font-semibold hover:underline"
+              >
+                Learn more →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">
+            Track Your Pregnancy with BabyBloom
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Get personalized week-by-week updates, track symptoms, access expert advice,
+            and connect with other expecting parents.
+          </p>
+          <button className="bg-white text-purple-600 px-10 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition">
+            Download BabyBloom App
+          </button>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto prose prose-lg">
+          <h2 className="text-3xl font-bold mb-6">
+            Your Complete Pregnancy Guide
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Pregnancy is an incredible journey that lasts approximately 40 weeks, divided into
+            three trimesters. Each week brings new developments for your baby and changes for
+            your body. Our comprehensive week-by-week pregnancy guide provides you with expert
+            information, practical tips, and reassurance throughout your pregnancy journey.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-4 mt-8">
+            What to Expect During Pregnancy
+          </h3>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            From the moment of conception to the day you meet your baby, your body undergoes
+            remarkable changes. Understanding what happens each week can help you feel more
+            prepared and confident. Our guides cover baby development, common symptoms, nutrition
+            advice, and important milestones for every week of pregnancy.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Whether you're experiencing morning sickness in the first trimester, feeling your
+            baby's first kicks in the second trimester, or preparing for labor in the third
+            trimester, we're here to support you with accurate, helpful information.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
     </div>
   );
 }

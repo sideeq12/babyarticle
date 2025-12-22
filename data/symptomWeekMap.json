@@ -1,0 +1,1038 @@
+[
+    {
+        "week": 4,
+        "symptom": "nausea",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Nausea may just be starting as hCG levels begin to rise"
+    },
+    {
+        "week": 4,
+        "symptom": "fatigue",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Extreme tiredness is common as your body adjusts to pregnancy"
+    },
+    {
+        "week": 4,
+        "symptom": "breast tenderness",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Breast changes begin early due to hormonal shifts"
+    },
+    {
+        "week": 4,
+        "symptom": "cramps",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Mild cramping is normal as the embryo implants"
+    },
+    {
+        "week": 5,
+        "symptom": "nausea",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Morning sickness often intensifies as hCG doubles rapidly"
+    },
+    {
+        "week": 5,
+        "symptom": "fatigue",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Fatigue peaks as progesterone levels soar"
+    },
+    {
+        "week": 5,
+        "symptom": "frequent urination",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Increased urination begins as blood volume expands"
+    },
+    {
+        "week": 5,
+        "symptom": "mood swings",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Emotional changes are normal with rapidly shifting hormones"
+    },
+    {
+        "week": 6,
+        "symptom": "nausea",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Morning sickness often peaks around this week"
+    },
+    {
+        "week": 6,
+        "symptom": "vomiting",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Vomiting may accompany nausea as hCG levels are very high"
+    },
+    {
+        "week": 6,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Bloating increases as progesterone slows digestion"
+    },
+    {
+        "week": 6,
+        "symptom": "breast tenderness",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Breast sensitivity intensifies with rising estrogen"
+    },
+    {
+        "week": 7,
+        "symptom": "nausea",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Nausea remains intense but may ease in coming weeks"
+    },
+    {
+        "week": 7,
+        "symptom": "fatigue",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Exhaustion continues as your body works hard to support baby"
+    },
+    {
+        "week": 7,
+        "symptom": "headaches",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Headaches are common from hormonal changes and increased blood volume"
+    },
+    {
+        "week": 7,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Lightheadedness can occur as blood pressure adjusts"
+    },
+    {
+        "week": 8,
+        "symptom": "nausea",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Morning sickness continues but should start improving soon"
+    },
+    {
+        "week": 8,
+        "symptom": "vomiting",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Vomiting may persist but typically eases after first trimester"
+    },
+    {
+        "week": 8,
+        "symptom": "headaches",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Hormonal headaches are still common at this stage"
+    },
+    {
+        "week": 8,
+        "symptom": "mood swings",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Emotional fluctuations continue with high hormone levels"
+    },
+    {
+        "week": 9,
+        "symptom": "nausea",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Nausea may begin to ease as you approach the second trimester"
+    },
+    {
+        "week": 9,
+        "symptom": "fatigue",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Tiredness persists but energy may start returning soon"
+    },
+    {
+        "week": 9,
+        "symptom": "breast tenderness",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Breast changes continue as milk ducts develop"
+    },
+    {
+        "week": 9,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bathroom trips increase as uterus presses on bladder"
+    },
+    {
+        "week": 10,
+        "symptom": "nausea",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Morning sickness should start improving for many women"
+    },
+    {
+        "week": 10,
+        "symptom": "fatigue",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Energy levels may begin to stabilize"
+    },
+    {
+        "week": 10,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Digestive changes continue with progesterone effects"
+    },
+    {
+        "week": 10,
+        "symptom": "cramps",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Round ligament pain may begin as uterus expands"
+    },
+    {
+        "week": 11,
+        "symptom": "nausea",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Nausea typically eases significantly by this week"
+    },
+    {
+        "week": 11,
+        "symptom": "fatigue",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Energy often returns as you near the second trimester"
+    },
+    {
+        "week": 11,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Headaches may reduce as hormones stabilize"
+    },
+    {
+        "week": 11,
+        "symptom": "mood swings",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Emotions may feel more balanced as first trimester ends"
+    },
+    {
+        "week": 12,
+        "symptom": "nausea",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Symptoms may begin easing as the first trimester ends"
+    },
+    {
+        "week": 12,
+        "symptom": "fatigue",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Most women feel more energetic entering second trimester"
+    },
+    {
+        "week": 12,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches often improve with hormone stabilization"
+    },
+    {
+        "week": 12,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Bloating may persist as uterus continues expanding"
+    },
+    {
+        "week": 13,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches are less common in the honeymoon trimester"
+    },
+    {
+        "week": 13,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Occasional dizziness can occur with blood pressure changes"
+    },
+    {
+        "week": 13,
+        "symptom": "bloating",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Digestive symptoms may ease in second trimester"
+    },
+    {
+        "week": 13,
+        "symptom": "mood swings",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Emotions typically stabilize during this trimester"
+    },
+    {
+        "week": 14,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches are less frequent with balanced hormones"
+    },
+    {
+        "week": 14,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Lightheadedness may occur if standing too quickly"
+    },
+    {
+        "week": 14,
+        "symptom": "back pain",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Back discomfort may begin as baby bump grows"
+    },
+    {
+        "week": 14,
+        "symptom": "bloating",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Bloating continues but is often less bothersome"
+    },
+    {
+        "week": 15,
+        "symptom": "back pain",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Lower back pain increases with growing uterus"
+    },
+    {
+        "week": 15,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Blood pressure changes can cause occasional dizziness"
+    },
+    {
+        "week": 15,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches are uncommon but can occur with dehydration"
+    },
+    {
+        "week": 15,
+        "symptom": "bloating",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Digestive changes persist throughout pregnancy"
+    },
+    {
+        "week": 16,
+        "symptom": "back pain",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Backache becomes more noticeable as posture shifts"
+    },
+    {
+        "week": 16,
+        "symptom": "cramps",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Round ligament pain is common as ligaments stretch"
+    },
+    {
+        "week": 16,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Occasional headaches may occur from stress or dehydration"
+    },
+    {
+        "week": 16,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Dizziness can happen with rapid position changes"
+    },
+    {
+        "week": 17,
+        "symptom": "back pain",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Back pain increases with weight gain and posture changes"
+    },
+    {
+        "week": 17,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Bloating and gas are common as digestion slows"
+    },
+    {
+        "week": 17,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches may occur but are less common this trimester"
+    },
+    {
+        "week": 17,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Lightheadedness can occur with low blood sugar"
+    },
+    {
+        "week": 18,
+        "symptom": "back pain",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Lower back strain increases as belly grows"
+    },
+    {
+        "week": 18,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Digestive discomfort continues with progesterone effects"
+    },
+    {
+        "week": 18,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches are less frequent but can occur"
+    },
+    {
+        "week": 18,
+        "symptom": "cramps",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Ligament stretching causes occasional cramping"
+    },
+    {
+        "week": 19,
+        "symptom": "back pain",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Back pain is common as center of gravity shifts"
+    },
+    {
+        "week": 19,
+        "symptom": "dizziness",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Dizziness increases as blood volume expands"
+    },
+    {
+        "week": 19,
+        "symptom": "cramps",
+        "severity": "mild",
+        "is_common": true,
+        "week_context": "Leg cramps may begin at night"
+    },
+    {
+        "week": 19,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Occasional headaches can occur with fatigue"
+    },
+    {
+        "week": 20,
+        "symptom": "back pain",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Halfway through pregnancy, back strain is very common"
+    },
+    {
+        "week": 20,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Leg cramps and round ligament pain are typical"
+    },
+    {
+        "week": 20,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Bloating persists as uterus takes up more space"
+    },
+    {
+        "week": 20,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches are less common but can occur"
+    },
+    {
+        "week": 21,
+        "symptom": "back pain",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Back pain continues with increasing weight"
+    },
+    {
+        "week": 21,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Leg cramps are common, especially at night"
+    },
+    {
+        "week": 21,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Digestive discomfort persists throughout pregnancy"
+    },
+    {
+        "week": 21,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches may occur with stress or poor posture"
+    },
+    {
+        "week": 22,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain intensifies as baby grows rapidly"
+    },
+    {
+        "week": 22,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Braxton Hicks contractions may begin"
+    },
+    {
+        "week": 22,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Bloating and constipation are common"
+    },
+    {
+        "week": 22,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Occasional dizziness from blood pressure changes"
+    },
+    {
+        "week": 23,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Lower back pain is very common at this stage"
+    },
+    {
+        "week": 23,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Braxton Hicks and leg cramps are typical"
+    },
+    {
+        "week": 23,
+        "symptom": "bloating",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Digestive issues continue as baby takes up space"
+    },
+    {
+        "week": 23,
+        "symptom": "headaches",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Headaches can occur but are less common"
+    },
+    {
+        "week": 24,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back strain increases significantly with growing belly"
+    },
+    {
+        "week": 24,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Leg cramps and Braxton Hicks are common"
+    },
+    {
+        "week": 24,
+        "symptom": "bloating",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bloating and constipation worsen as space decreases"
+    },
+    {
+        "week": 24,
+        "symptom": "dizziness",
+        "severity": "mild",
+        "is_common": false,
+        "week_context": "Dizziness may occur with glucose changes"
+    },
+    {
+        "week": 25,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain is a major complaint at this stage"
+    },
+    {
+        "week": 25,
+        "symptom": "bloating",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Constipation and bloating are very common"
+    },
+    {
+        "week": 25,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Leg cramps intensify, especially at night"
+    },
+    {
+        "week": 25,
+        "symptom": "insomnia",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Sleep difficulties begin as comfort decreases"
+    },
+    {
+        "week": 26,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain continues as third trimester approaches"
+    },
+    {
+        "week": 26,
+        "symptom": "insomnia",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Sleep disturbances increase with discomfort"
+    },
+    {
+        "week": 26,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Leg cramps and Braxton Hicks are frequent"
+    },
+    {
+        "week": 26,
+        "symptom": "bloating",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Digestive issues persist as baby grows"
+    },
+    {
+        "week": 27,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Entering third trimester, back pain is very common"
+    },
+    {
+        "week": 27,
+        "symptom": "insomnia",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Sleep challenges increase in third trimester"
+    },
+    {
+        "week": 27,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bathroom trips increase as baby presses on bladder"
+    },
+    {
+        "week": 27,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Braxton Hicks become more noticeable"
+    },
+    {
+        "week": 28,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain intensifies with third trimester weight"
+    },
+    {
+        "week": 28,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep difficulties are very common now"
+    },
+    {
+        "week": 28,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Frequent urination returns with bladder pressure"
+    },
+    {
+        "week": 28,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Braxton Hicks contractions are more frequent"
+    },
+    {
+        "week": 29,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Lower back strain is significant at this stage"
+    },
+    {
+        "week": 29,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Finding comfortable sleep positions is challenging"
+    },
+    {
+        "week": 29,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Nighttime bathroom trips disrupt sleep"
+    },
+    {
+        "week": 29,
+        "symptom": "bloating",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Digestive discomfort continues with limited space"
+    },
+    {
+        "week": 30,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain is a major issue as delivery approaches"
+    },
+    {
+        "week": 30,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep quality decreases significantly"
+    },
+    {
+        "week": 30,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bladder pressure causes constant bathroom trips"
+    },
+    {
+        "week": 30,
+        "symptom": "mood swings",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Emotional changes return with fatigue and discomfort"
+    },
+    {
+        "week": 31,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain persists with baby's increasing weight"
+    },
+    {
+        "week": 31,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is increasingly difficult to achieve"
+    },
+    {
+        "week": 31,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Urination frequency is at its peak"
+    },
+    {
+        "week": 31,
+        "symptom": "cramps",
+        "severity": "moderate",
+        "is_common": true,
+        "week_context": "Pelvic pain and Braxton Hicks are common"
+    },
+    {
+        "week": 32,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain is severe as delivery nears"
+    },
+    {
+        "week": 32,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep deprivation is common in late pregnancy"
+    },
+    {
+        "week": 32,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Constant bladder pressure affects daily life"
+    },
+    {
+        "week": 32,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Braxton Hicks increase as body prepares for labor"
+    },
+    {
+        "week": 33,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Lower back pain is intense at this stage"
+    },
+    {
+        "week": 33,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is very challenging with discomfort"
+    },
+    {
+        "week": 33,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bathroom trips are extremely frequent"
+    },
+    {
+        "week": 33,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Pelvic pressure and contractions intensify"
+    },
+    {
+        "week": 34,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain continues as baby drops lower"
+    },
+    {
+        "week": 34,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep quality is poor with physical discomfort"
+    },
+    {
+        "week": 34,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bladder pressure is constant"
+    },
+    {
+        "week": 34,
+        "symptom": "fatigue",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Exhaustion returns in final weeks"
+    },
+    {
+        "week": 35,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain is severe as body prepares for delivery"
+    },
+    {
+        "week": 35,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is nearly impossible with discomfort"
+    },
+    {
+        "week": 35,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Urination is constant as baby presses down"
+    },
+    {
+        "week": 35,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Braxton Hicks are very frequent now"
+    },
+    {
+        "week": 36,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain persists as baby may drop into pelvis"
+    },
+    {
+        "week": 36,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is extremely difficult in final weeks"
+    },
+    {
+        "week": 36,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Pelvic pressure causes constant urination"
+    },
+    {
+        "week": 36,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Contractions become more intense and regular"
+    },
+    {
+        "week": 37,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain continues as full term approaches"
+    },
+    {
+        "week": 37,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is minimal with anticipation and discomfort"
+    },
+    {
+        "week": 37,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Bathroom trips are constant day and night"
+    },
+    {
+        "week": 37,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Contractions may signal approaching labor"
+    },
+    {
+        "week": 38,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain is intense as labor approaches"
+    },
+    {
+        "week": 38,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is nearly impossible with discomfort"
+    },
+    {
+        "week": 38,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Constant urination as baby is very low"
+    },
+    {
+        "week": 38,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Strong contractions may indicate early labor"
+    },
+    {
+        "week": 39,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Severe back pain as labor could start anytime"
+    },
+    {
+        "week": 39,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is very difficult with anticipation"
+    },
+    {
+        "week": 39,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Urination is constant as baby is engaged"
+    },
+    {
+        "week": 39,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Regular contractions may signal labor beginning"
+    },
+    {
+        "week": 40,
+        "symptom": "back pain",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Back pain is severe as labor is imminent"
+    },
+    {
+        "week": 40,
+        "symptom": "insomnia",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Sleep is minimal as you await labor"
+    },
+    {
+        "week": 40,
+        "symptom": "frequent urination",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Constant bathroom trips as baby is fully engaged"
+    },
+    {
+        "week": 40,
+        "symptom": "cramps",
+        "severity": "high",
+        "is_common": true,
+        "week_context": "Contractions signal labor is starting or near"
+    }
+]

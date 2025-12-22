@@ -1,0 +1,219 @@
+[
+    {
+        "symptom": "nausea",
+        "medical_name": "morning sickness",
+        "description": "A feeling of sickness or vomiting caused by hormonal changes",
+        "safe_remedies": [
+            "small frequent meals",
+            "ginger tea",
+            "hydration",
+            "rest",
+            "avoiding strong smells",
+            "lemon-based drinks"
+        ],
+        "warning_signs": [
+            "severe dehydration",
+            "persistent vomiting",
+            "weight loss",
+            "inability to keep fluids down"
+        ]
+    },
+    {
+        "symptom": "vomiting",
+        "medical_name": "emesis",
+        "description": "Expelling stomach contents, often related to morning sickness",
+        "safe_remedies": [
+            "sipping clear fluids",
+            "eating bland foods",
+            "ginger supplements",
+            "vitamin B6",
+            "small meals throughout day"
+        ],
+        "warning_signs": [
+            "vomiting multiple times per day",
+            "blood in vomit",
+            "signs of dehydration",
+            "severe abdominal pain"
+        ]
+    },
+    {
+        "symptom": "fatigue",
+        "medical_name": "pregnancy exhaustion",
+        "description": "Extreme tiredness caused by increased progesterone and body changes",
+        "safe_remedies": [
+            "adequate sleep",
+            "short naps",
+            "light exercise",
+            "iron-rich foods",
+            "staying hydrated"
+        ],
+        "warning_signs": [
+            "extreme exhaustion affecting daily life",
+            "dizziness with fatigue",
+            "shortness of breath",
+            "pale skin"
+        ]
+    },
+    {
+        "symptom": "headaches",
+        "medical_name": "cephalgia",
+        "description": "Head pain caused by hormonal changes, stress, or dehydration",
+        "safe_remedies": [
+            "rest in dark room",
+            "cold compress",
+            "hydration",
+            "regular meals",
+            "stress management"
+        ],
+        "warning_signs": [
+            "severe or sudden headache",
+            "vision changes",
+            "headache with fever",
+            "persistent migraine"
+        ]
+    },
+    {
+        "symptom": "cramps",
+        "medical_name": "uterine cramping",
+        "description": "Mild cramping as uterus expands and ligaments stretch",
+        "safe_remedies": [
+            "warm bath",
+            "gentle stretching",
+            "rest",
+            "staying hydrated",
+            "changing positions"
+        ],
+        "warning_signs": [
+            "severe cramping",
+            "cramping with bleeding",
+            "one-sided sharp pain",
+            "cramping with fever"
+        ]
+    },
+    {
+        "symptom": "back pain",
+        "medical_name": "lumbar pain",
+        "description": "Lower back discomfort from weight gain and posture changes",
+        "safe_remedies": [
+            "prenatal yoga",
+            "proper posture",
+            "pregnancy pillow",
+            "warm compress",
+            "prenatal massage"
+        ],
+        "warning_signs": [
+            "severe back pain",
+            "pain radiating to legs",
+            "pain with fever",
+            "difficulty walking"
+        ]
+    },
+    {
+        "symptom": "bloating",
+        "medical_name": "abdominal distension",
+        "description": "Feeling of fullness and gas due to slowed digestion",
+        "safe_remedies": [
+            "small frequent meals",
+            "avoiding gas-producing foods",
+            "staying active",
+            "drinking water",
+            "eating slowly"
+        ],
+        "warning_signs": [
+            "severe bloating with pain",
+            "bloating with vomiting",
+            "inability to pass gas",
+            "bloating with bleeding"
+        ]
+    },
+    {
+        "symptom": "dizziness",
+        "medical_name": "vertigo",
+        "description": "Lightheadedness from blood pressure changes and increased blood volume",
+        "safe_remedies": [
+            "rising slowly",
+            "staying hydrated",
+            "regular snacks",
+            "avoiding overheating",
+            "sitting when dizzy"
+        ],
+        "warning_signs": [
+            "fainting",
+            "severe dizziness",
+            "dizziness with bleeding",
+            "chest pain with dizziness"
+        ]
+    },
+    {
+        "symptom": "breast tenderness",
+        "medical_name": "mastalgia",
+        "description": "Breast sensitivity and swelling due to hormonal changes",
+        "safe_remedies": [
+            "supportive bra",
+            "avoiding caffeine",
+            "cold compress",
+            "loose clothing",
+            "gentle massage"
+        ],
+        "warning_signs": [
+            "severe breast pain",
+            "red or hot breasts",
+            "lumps or discharge",
+            "one-sided severe pain"
+        ]
+    },
+    {
+        "symptom": "mood swings",
+        "medical_name": "emotional lability",
+        "description": "Rapid emotional changes caused by hormonal fluctuations",
+        "safe_remedies": [
+            "adequate sleep",
+            "talking to partner",
+            "gentle exercise",
+            "stress management",
+            "support groups"
+        ],
+        "warning_signs": [
+            "severe depression",
+            "thoughts of self-harm",
+            "inability to function",
+            "extreme anxiety"
+        ]
+    },
+    {
+        "symptom": "insomnia",
+        "medical_name": "sleep disturbance",
+        "description": "Difficulty sleeping due to discomfort, hormones, and anxiety",
+        "safe_remedies": [
+            "bedtime routine",
+            "pregnancy pillow",
+            "relaxation techniques",
+            "limiting screen time",
+            "warm milk"
+        ],
+        "warning_signs": [
+            "severe sleep deprivation",
+            "insomnia affecting health",
+            "extreme daytime fatigue",
+            "depression with insomnia"
+        ]
+    },
+    {
+        "symptom": "frequent urination",
+        "medical_name": "urinary frequency",
+        "description": "Increased need to urinate from uterine pressure on bladder",
+        "safe_remedies": [
+            "limiting fluids before bed",
+            "leaning forward when urinating",
+            "avoiding caffeine",
+            "pelvic floor exercises",
+            "staying hydrated during day"
+        ],
+        "warning_signs": [
+            "pain with urination",
+            "blood in urine",
+            "fever with urination",
+            "inability to urinate"
+        ]
+    }
+]
