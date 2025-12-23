@@ -15,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="YwRH4qKY4J0Yt48AN1RKprBHWXN9T-P1LnEpve7cSFA" />
       <body className="antialiased">
         {/* Navigation */}
         <nav className="bg-white border-b sticky top-0 z-50">
