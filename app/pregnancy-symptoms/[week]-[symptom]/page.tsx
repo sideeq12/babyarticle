@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import pregnancyWeeks from '@/data/pregnancyWeeks.json';
 import symptoms from '@/data/symptoms.json';
 import symptomWeekMap from '@/data/symptomWeekMap.json';
@@ -60,6 +61,20 @@ export default async function SymptomWeekPage({ params }: PageProps) {
     if (!weekData || !symptomData || !mapping) {
         return <div>Page not found</div>;
     }
+
+    const symptomImages: { [key: string]: string } = {
+        'nausea': 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70',
+        'fatigue': 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70',
+        'insomnia': 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70',
+        'back pain': 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b',
+        'braxton hicks': 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b',
+        'swelling': 'https://images.unsplash.com/photo-1519689680058-324335c77eba',
+        'heartburn': 'https://images.unsplash.com/photo-1490645935967-10de6ba17061',
+        'constipation': 'https://images.unsplash.com/photo-1490645935967-10de6ba17061',
+    };
+
+    const defaultImage = 'https://images.unsplash.com/photo-1559839734-2b71f1736827';
+    const symptomImageUrl = symptomImages[symptomName.toLowerCase()] || defaultImage;
 
     // Helper function for severity description
     const getSeverityDescription = (severity: string) => {
@@ -153,12 +168,20 @@ export default async function SymptomWeekPage({ params }: PageProps) {
                 </p>
             </header>
 
-            {/* Image Placeholder */}
-            <div className="mb-10 bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-12 text-center">
-                <p className="text-gray-600 text-lg">📸 Image Placeholder</p>
-                <p className="text-sm text-gray-500 mt-2">
-                    {weekNumber} Weeks Pregnant - Managing {symptomData.medical_name}
-                </p>
+            {/* Main Image */}
+            <div className="relative h-[300px] md:h-[450px] w-full mb-10 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                    src={symptomImageUrl}
+                    alt={`${symptomName} at ${weekNumber} weeks pregnant`}
+                    fill
+                    className="object-cover"
+                    priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+                    <p className="text-white text-lg font-medium">
+                        Managing {symptomData.medical_name} during Week {weekNumber}
+                    </p>
+                </div>
             </div>
 
             {/* Quick Summary Box */}

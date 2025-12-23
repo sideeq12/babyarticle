@@ -1,6 +1,8 @@
 'use client';
 
 import { Metadata } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function PregnancyDueDateCalculatorPage() {
@@ -40,32 +42,42 @@ export default function PregnancyDueDateCalculatorPage() {
         <div className="max-w-4xl mx-auto px-4 py-8">
             {/* Header */}
             <header className="text-center mb-12">
-                <h1 className="text-5xl font-bold mb-4">Pregnancy Due Date Calculator</h1>
-                <p className="text-xl text-gray-600">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4">Pregnancy Due Date Calculator</h1>
+                <p className="text-lg md:text-xl text-gray-600 mb-8">
                     Calculate your estimated due date based on your last menstrual period
                 </p>
+
+                <div className="relative h-[300px] md:h-[500px] w-full overflow-hidden shadow-2xl mb-12">
+                    <Image
+                        src="/CTA cover.jpg"
+                        alt="Pregnancy planning and journey"
+                        fill
+                        className="object-cover brightness-75"
+                        priority
+                    />
+                </div>
             </header>
 
             {/* Calculator */}
             <section className="mb-12">
-                <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-8 mb-8">
-                    <h2 className="text-2xl font-bold mb-6">Calculate Your Due Date</h2>
+                <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl md:rounded-lg p-6 md:p-8 mb-8">
+                    <h2 className="text-xl md:text-2xl font-bold mb-6">Calculate Your Due Date</h2>
 
                     <div className="mb-6">
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 text-sm md:text-base">
                             First day of your last menstrual period (LMP):
                         </label>
                         <input
                             type="date"
                             value={lastPeriodDate}
                             onChange={(e) => setLastPeriodDate(e.target.value)}
-                            className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                            className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base"
                         />
                     </div>
 
                     <button
                         onClick={calculateDueDate}
-                        className="w-full bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition text-lg"
+                        className="w-full bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition text-base md:text-lg"
                     >
                         Calculate Due Date
                     </button>
@@ -73,30 +85,30 @@ export default function PregnancyDueDateCalculatorPage() {
 
                 {/* Results */}
                 {dueDate && (
-                    <div className="bg-white border-2 border-purple-500 rounded-lg p-8">
-                        <h3 className="text-2xl font-bold mb-6 text-center">Your Results</h3>
+                    <div className="bg-white border-2 border-purple-500 rounded-2xl md:rounded-lg p-6 md:p-8">
+                        <h3 className="text-xl md:text-2xl font-bold mb-6 text-center">Your Results</h3>
 
                         <div className="grid md:grid-cols-2 gap-6 mb-6">
-                            <div className="bg-purple-50 rounded-lg p-6 text-center">
-                                <div className="text-sm text-gray-600 mb-2">Estimated Due Date</div>
-                                <div className="text-3xl font-bold text-purple-600">{dueDate}</div>
+                            <div className="bg-purple-50 rounded-xl md:rounded-lg p-6 text-center">
+                                <div className="text-xs md:text-sm text-gray-600 mb-2">Estimated Due Date</div>
+                                <div className="text-2xl md:text-3xl font-bold text-purple-600">{dueDate}</div>
                             </div>
 
-                            <div className="bg-pink-50 rounded-lg p-6 text-center">
-                                <div className="text-sm text-gray-600 mb-2">Current Week</div>
-                                <div className="text-3xl font-bold text-pink-600">Week {currentWeek}</div>
+                            <div className="bg-pink-50 rounded-xl md:rounded-lg p-6 text-center">
+                                <div className="text-xs md:text-sm text-gray-600 mb-2">Current Week</div>
+                                <div className="text-2xl md:text-3xl font-bold text-pink-600">Week {currentWeek}</div>
                             </div>
                         </div>
 
-                        <div className="bg-blue-50 rounded-lg p-6 text-center mb-6">
-                            <div className="text-sm text-gray-600 mb-2">Current Trimester</div>
-                            <div className="text-2xl font-bold text-blue-600">{trimester} Trimester</div>
+                        <div className="bg-blue-50 rounded-xl md:rounded-lg p-6 text-center mb-6">
+                            <div className="text-xs md:text-sm text-gray-600 mb-2">Current Trimester</div>
+                            <div className="text-xl md:text-2xl font-bold text-blue-600">{trimester} Trimester</div>
                         </div>
 
                         <div className="text-center">
                             <a
                                 href={`/pregnancy/${currentWeek}-weeks-pregnant`}
-                                className="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition"
+                                className="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition text-sm md:text-base"
                             >
                                 View Week {currentWeek} Guide →
                             </a>
@@ -107,9 +119,9 @@ export default function PregnancyDueDateCalculatorPage() {
 
             {/* How it Works */}
             <section className="mb-12">
-                <h2 className="text-3xl font-bold mb-6">How the Calculator Works</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">How the Calculator Works</h2>
 
-                <div className="prose prose-lg max-w-none">
+                <div className="prose prose-sm md:prose-lg max-w-none">
                     <p className="text-gray-700 leading-relaxed mb-4">
                         This pregnancy due date calculator uses the <strong>Naegele's Rule</strong>, which is
                         the standard method used by healthcare providers to estimate your due date. The calculation
@@ -117,8 +129,8 @@ export default function PregnancyDueDateCalculatorPage() {
                     </p>
 
                     <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-6">
-                        <h3 className="text-xl font-semibold mb-3">The Formula:</h3>
-                        <p className="text-gray-700">
+                        <h3 className="text-lg md:text-xl font-semibold mb-3">The Formula:</h3>
+                        <p className="text-gray-700 text-sm md:text-base">
                             Due Date = First day of LMP + 280 days (40 weeks)
                         </p>
                     </div>
@@ -131,28 +143,77 @@ export default function PregnancyDueDateCalculatorPage() {
                 </div>
             </section>
 
-            {/* Important Information */}
-            <section className="mb-12">
-                <h2 className="text-3xl font-bold mb-6">Important to Know</h2>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-yellow-50 border-l-4 border-yellow-500 rounded-lg p-6">
-                        <h3 className="font-semibold text-lg mb-3">Accuracy Factors</h3>
-                        <ul className="space-y-2 text-gray-700">
-                            <li>• This calculation assumes a 28-day menstrual cycle</li>
-                            <li>• Irregular cycles may affect accuracy</li>
-                            <li>• Ultrasound dating is more precise</li>
-                            <li>• Your doctor may adjust your due date</li>
+            {/* Accuracy Factors */}
+            <section className="mb-12 border-t-2 border-b-2 border-gray-100 py-12">
+                <div className="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h2 className="text-2xl md:text-3xl font-bold mb-6">Accuracy Factors</h2>
+                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                            While our calculator uses standard medical formulas, several factors can influence the exact timing of your baby's arrival:
+                        </p>
+                        <ul className="space-y-4 text-gray-700 text-base md:text-lg">
+                            <li className="flex items-start gap-3">
+                                <span className="text-purple-500 font-bold mt-1">•</span>
+                                <span><strong>Cycle Length:</strong> This calculation assumes a standard 28-day menstrual cycle.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-purple-500 font-bold mt-1">•</span>
+                                <span><strong>Irregular Cycles:</strong> If your cycles are shorter or longer, the LMP method may be less accurate.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-purple-500 font-bold mt-1">•</span>
+                                <span><strong>Ultrasound Dating:</strong> Early ultrasounds (before 12 weeks) are considered the most precise way to date a pregnancy.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-purple-500 font-bold mt-1">•</span>
+                                <span><strong>Medical Adjustments:</strong> Your doctor may adjust your due date based on physical exams or scan results.</span>
+                            </li>
                         </ul>
                     </div>
+                    <div className="relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                        <Image
+                            src="/doctor.jpg"
+                            alt="Healthcare professional explaining pregnancy accuracy"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                </div>
+            </section>
 
-                    <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-6">
-                        <h3 className="font-semibold text-lg mb-3">When Babies Arrive</h3>
-                        <ul className="space-y-2 text-gray-700">
-                            <li>• Full term: 37-42 weeks</li>
-                            <li>• Only 5% born on due date</li>
-                            <li>• 80% born within 2 weeks of due date</li>
-                            <li>• First babies often arrive later</li>
+            {/* When Babies Arrive */}
+            <section className="mb-12 py-12">
+                <div className="grid md:grid-cols-2 gap-10 items-center">
+                    <div className="order-2 md:order-1 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                        <Image
+                            src="/week 40.jpg"
+                            alt="Newborn baby and mother"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="order-1 md:order-2">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-6">When Babies Arrive</h2>
+                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                            Understanding the window of birth can help you prepare for the big day:
+                        </p>
+                        <ul className="space-y-4 text-gray-700 text-base md:text-lg">
+                            <li className="flex items-start gap-3">
+                                <span className="text-pink-500 font-bold mt-1">•</span>
+                                <span><strong>Full Term:</strong> A pregnancy is considered full term anywhere between 37 and 42 weeks.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-pink-500 font-bold mt-1">•</span>
+                                <span><strong>The 5% Rule:</strong> Only about 5% of babies are actually born on their estimated due date.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-pink-500 font-bold mt-1">•</span>
+                                <span><strong>The Window:</strong> Over 80% of babies arrive within two weeks (before or after) of their due date.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-pink-500 font-bold mt-1">•</span>
+                                <span><strong>First-Time Moms:</strong> Statistics show that first babies often arrive a few days after the due date.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -160,35 +221,35 @@ export default function PregnancyDueDateCalculatorPage() {
 
             {/* Pregnancy Timeline */}
             <section className="mb-12">
-                <h2 className="text-3xl font-bold mb-6">Your Pregnancy Timeline</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">Your Pregnancy Timeline</h2>
 
                 <div className="space-y-4">
-                    <div className="bg-purple-50 rounded-lg p-6">
+                    <div className="bg-purple-50 rounded-xl md:rounded-lg p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-xl font-semibold">First Trimester</h3>
-                            <span className="text-sm text-gray-600">Weeks 1-12</span>
+                            <h3 className="text-lg md:text-xl font-semibold">First Trimester</h3>
+                            <span className="text-xs text-gray-600">Weeks 1-12</span>
                         </div>
-                        <p className="text-gray-700">
+                        <p className="text-sm md:text-base text-gray-700">
                             Major organs form, morning sickness common, first prenatal visits, hear baby's heartbeat
                         </p>
                     </div>
 
-                    <div className="bg-pink-50 rounded-lg p-6">
+                    <div className="bg-pink-50 rounded-xl md:rounded-lg p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-xl font-semibold">Second Trimester</h3>
-                            <span className="text-sm text-gray-600">Weeks 13-26</span>
+                            <h3 className="text-lg md:text-xl font-semibold">Second Trimester</h3>
+                            <span className="text-xs text-gray-600">Weeks 13-26</span>
                         </div>
-                        <p className="text-gray-700">
+                        <p className="text-sm md:text-base text-gray-700">
                             Feel baby move, anatomy scan, find out gender (optional), energy returns, baby bump visible
                         </p>
                     </div>
 
-                    <div className="bg-blue-50 rounded-lg p-6">
+                    <div className="bg-blue-50 rounded-xl md:rounded-lg p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-xl font-semibold">Third Trimester</h3>
-                            <span className="text-sm text-gray-600">Weeks 27-40</span>
+                            <h3 className="text-lg md:text-xl font-semibold">Third Trimester</h3>
+                            <span className="text-xs text-gray-600">Weeks 27-40</span>
                         </div>
-                        <p className="text-gray-700">
+                        <p className="text-sm md:text-base text-gray-700">
                             Baby gains weight, prepare nursery, pack hospital bag, attend childbirth classes, meet your baby!
                         </p>
                     </div>
@@ -196,14 +257,27 @@ export default function PregnancyDueDateCalculatorPage() {
             </section>
 
             {/* CTA */}
-            <section className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg p-8 text-center">
-                <h2 className="text-3xl font-bold mb-4">Track Your Pregnancy Week by Week</h2>
-                <p className="text-lg mb-6">
-                    Get personalized updates, track milestones, and access expert guidance with BabyBloom.
-                </p>
-                <button className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-                    Download BabyBloom App
-                </button>
+            <section className="relative h-[350px] md:h-[400px] rounded-2xl md:rounded-[3rem] overflow-hidden mb-24">
+                <Image
+                    src="/CTA cover.jpg"
+                    alt="BabyBloom App"
+                    fill
+                    className="object-cover brightness-50"
+                />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6">Track Your Journey</h2>
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl mb-10">
+                        Get personalized updates, track milestones, and access expert guidance with BabyBloom.
+                    </p>
+                    <Link
+                        href="https://babybloom.club"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-xl inline-block"
+                    >
+                        Download BabyBloom App
+                    </Link>
+                </div>
             </section>
 
             {/* Medical Disclaimer */}

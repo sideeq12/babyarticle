@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
 import pregnancyWeeks from '@/data/pregnancyWeeks.json';
 
 export const metadata: Metadata = {
@@ -18,19 +20,30 @@ export default function PregnancyOverviewPage() {
 
     return (
         <div className="max-w-6xl mx-auto px-4 py-8">
-            {/* Header */}
-            <header className="text-center mb-12">
-                <h1 className="text-5xl font-bold mb-4">Pregnancy Week by Week</h1>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Your complete guide to pregnancy from conception to birth. Explore what happens
-                    each week with your baby's development, your body's changes, and expert tips.
-                </p>
+            {/* Hero Section */}
+            <header className="relative h-[350px] md:h-[500px] flex items-center justify-center text-white overflow-hidden mb-16 shadow-2xl">
+                <Image
+                    src="/CTA cover.jpg"
+                    alt="Pregnancy week by week guide"
+                    fill
+                    className="object-cover brightness-50"
+                    priority
+                />
+                <div className="relative z-10 text-center px-4">
+                    <h1 className="text-4xl md:text-7xl font-bold mb-6 drop-shadow-lg">
+                        Week by Week
+                    </h1>
+                    <p className="text-lg md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+                        Your complete guide to pregnancy from conception to birth. Explore what happens
+                        each week with your baby's development and your body's changes.
+                    </p>
+                </div>
             </header>
 
             {/* First Trimester */}
             <section className="mb-12">
-                <div className="bg-purple-100 rounded-lg p-6 mb-6">
-                    <h2 className="text-3xl font-bold mb-2">First Trimester (Weeks 1-12)</h2>
+                <div className="bg-purple-100 rounded-2xl md:rounded-3xl p-6 mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2">First Trimester (Weeks 1-12)</h2>
                     <p className="text-gray-700">
                         The first trimester is a time of rapid development. Your baby grows from a single cell
                         to a tiny human with all major organs forming. You may experience morning sickness,
@@ -38,7 +51,7 @@ export default function PregnancyOverviewPage() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {firstTrimester.map((week) => (
                         <a
                             key={week.week}
@@ -55,8 +68,8 @@ export default function PregnancyOverviewPage() {
 
             {/* Second Trimester */}
             <section className="mb-12">
-                <div className="bg-pink-100 rounded-lg p-6 mb-6">
-                    <h2 className="text-3xl font-bold mb-2">Second Trimester (Weeks 13-26)</h2>
+                <div className="bg-pink-100 rounded-2xl md:rounded-3xl p-6 mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2">Second Trimester (Weeks 13-26)</h2>
                     <p className="text-gray-700">
                         Often called the "honeymoon period" of pregnancy. Morning sickness typically eases,
                         energy returns, and you'll start to feel your baby move. Your baby bump becomes visible
@@ -64,7 +77,7 @@ export default function PregnancyOverviewPage() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {secondTrimester.map((week) => (
                         <a
                             key={week.week}
@@ -81,8 +94,8 @@ export default function PregnancyOverviewPage() {
 
             {/* Third Trimester */}
             <section className="mb-12">
-                <div className="bg-blue-100 rounded-lg p-6 mb-6">
-                    <h2 className="text-3xl font-bold mb-2">Third Trimester (Weeks 27-40)</h2>
+                <div className="bg-blue-100 rounded-2xl md:rounded-3xl p-6 mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2">Third Trimester (Weeks 27-40)</h2>
                     <p className="text-gray-700">
                         The final stretch! Your baby gains weight rapidly and prepares for birth. You may
                         experience back pain, frequent urination, and Braxton Hicks contractions. It's time
@@ -90,7 +103,7 @@ export default function PregnancyOverviewPage() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {thirdTrimester.map((week) => (
                         <a
                             key={week.week}
@@ -106,15 +119,27 @@ export default function PregnancyOverviewPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg p-8 text-center">
-                <h2 className="text-3xl font-bold mb-4">Track Your Pregnancy Journey</h2>
-                <p className="text-lg mb-6 max-w-2xl mx-auto">
-                    Get personalized week-by-week updates, track symptoms, and access expert advice
-                    throughout your pregnancy with BabyBloom.
-                </p>
-                <button className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition text-lg">
-                    Download BabyBloom App
-                </button>
+            <section className="relative h-[350px] md:h-[400px] rounded-2xl md:rounded-[3rem] overflow-hidden mb-24">
+                <Image
+                    src="/CTA cover.jpg"
+                    alt="BabyBloom App"
+                    fill
+                    className="object-cover brightness-50"
+                />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6">Track Your Journey</h2>
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl mb-10">
+                        Get personalized updates, track milestones, and access expert guidance with BabyBloom.
+                    </p>
+                    <Link
+                        href="https://babybloom.club"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-xl inline-block"
+                    >
+                        Download BabyBloom App
+                    </Link>
+                </div>
             </section>
         </div>
     );

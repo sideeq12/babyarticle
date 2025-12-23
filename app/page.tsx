@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import pregnancyWeeks from '@/data/pregnancyWeeks.json';
 
 export default function Home() {
@@ -8,25 +9,37 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-white overflow-hidden">
+        <Image
+          src="/CTA cover.jpg"
+          alt="Pregnancy journey"
+          fill
+          className="object-cover brightness-50"
+          priority
+        />
+        <div className="relative max-w-4xl mx-auto text-center z-10 px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Your Pregnancy Journey, Week by Week
           </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
+          <p className="text-lg md:text-2xl mb-8 opacity-90">
             Expert guidance, personalized insights, and comprehensive information
             for every stage of your pregnancy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/pregnancy"
-              className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition"
+              className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition shadow-lg"
             >
               Explore Week by Week
             </Link>
-            <button className="bg-purple-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-900 transition">
+            <Link
+              href="https://babybloom.club"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-purple-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-900 transition shadow-lg"
+            >
               Download BabyBloom App
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -34,7 +47,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Everything You Need for a Healthy Pregnancy
           </h2>
 
@@ -72,7 +85,7 @@ export default function Home() {
       {/* Featured Weeks */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Popular Pregnancy Weeks
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">
@@ -84,31 +97,47 @@ export default function Home() {
               <Link
                 key={week.week}
                 href={`/pregnancy/${week.week}-weeks-pregnant`}
-                className="border rounded-lg p-6 hover:border-purple-500 hover:shadow-xl transition"
+                className="group border rounded-lg overflow-hidden hover:border-purple-500 hover:shadow-xl transition"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm text-gray-500">{week.trimester} Trimester</span>
-                  <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">
-                    Week {week.week}
-                  </span>
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={
+                      [4, 12, 20, 28, 36, 40].includes(week.week)
+                        ? `/week ${week.week}.jpg`
+                        : week.week <= 12 ? "https://images.unsplash.com/photo-1584515933487-779824d29309" :
+                          week.week <= 26 ? "https://images.unsplash.com/photo-1519689680058-324335c77eba" :
+                            "https://images.unsplash.com/photo-1531983412531-1f49a365ffed"
+                    }
+                    alt={`${week.week} weeks pregnant`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition duration-500"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  {week.week} Weeks Pregnant
-                </h3>
-                <p className="text-gray-600 mb-3">
-                  Baby size: {week.baby_size} ({week.baby_size_cm})
-                </p>
-                <p className="text-sm text-gray-500">
-                  {week.key_development}
-                </p>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-sm text-gray-500">{week.trimester} Trimester</span>
+                    <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">
+                      Week {week.week}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {week.week} Weeks Pregnant
+                  </h3>
+                  <p className="text-gray-600 mb-3">
+                    Baby size: {week.baby_size} ({week.baby_size_cm})
+                  </p>
+                  <p className="text-sm text-gray-500 line-clamp-2">
+                    {week.key_development}
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-12">
             <Link
               href="/pregnancy"
-              className="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition"
+              className="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition shadow-md"
             >
               View All 40 Weeks →
             </Link>
@@ -119,7 +148,7 @@ export default function Home() {
       {/* Trimester Overview */}
       <section className="py-16 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Your Pregnancy by Trimester
           </h2>
 
@@ -179,18 +208,29 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
+      <section className="relative h-[350px] md:h-[450px] overflow-hidden my-16">
+        <Image
+          src="/CTA cover.jpg"
+          alt="BabyBloom App"
+          fill
+          className="object-cover brightness-50"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 text-white">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Track Your Pregnancy with BabyBloom
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-lg md:text-xl mb-10 opacity-90 max-w-3xl">
             Get personalized week-by-week updates, track symptoms, access expert advice,
             and connect with other expecting parents.
           </p>
-          <button className="bg-white text-purple-600 px-10 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition">
+          <Link
+            href="https://babybloom.club"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-2xl inline-block"
+          >
             Download BabyBloom App
-          </button>
+          </Link>
         </div>
       </section>
 
