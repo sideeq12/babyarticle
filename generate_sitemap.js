@@ -2,7 +2,7 @@ const fs = require('fs');
 const pregnancyWeeks = require('./data/pregnancyWeeks.json');
 const symptomWeekMap = require('./data/symptomWeekMap.json');
 
-const baseUrl = 'https://babybloom.com';
+const baseUrl = 'https://babybloom.club';
 const lastMod = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
