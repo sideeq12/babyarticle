@@ -33,7 +33,7 @@ export default function Home() {
               Explore Week by Week
             </Link>
             <Link
-              href="https://babybloom.club"
+              href="https://blog.babybloom.club"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-purple-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-900 transition shadow-lg"
@@ -224,7 +224,7 @@ export default function Home() {
             and connect with other expecting parents.
           </p>
           <Link
-            href="https://babybloom.club"
+            href="https://blog.babybloom.club"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-2xl inline-block"

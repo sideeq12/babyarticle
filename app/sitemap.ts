@@ -3,7 +3,7 @@ import pregnancyWeeks from '@/data/pregnancyWeeks.json';
 import symptomWeekMap from '@/data/symptomWeekMap.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://babybloom.club'; // Replace with your actual domain
+    const baseUrl = 'https://blog.babybloom.club'; // Replace with your actual domain
 
     // Main pages
     const routes: MetadataRoute.Sitemap = [

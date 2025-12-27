@@ -369,7 +369,7 @@ export default async function PregnancyWeekPage({ params }: PageProps) {
             throughout your pregnancy journey.
           </p>
           <Link
-            href="https://babybloom.club"
+            href="https://blog.babybloom.club"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-xl inline-block"
